@@ -1,9 +1,9 @@
-# Fix de backticks (Navbar) – listo para Amplify
+# Build listo – incluye `prop-types`
 
-Se corrigieron los template literals en `Navbar.jsx` y `Logo.jsx` (se eliminaron los caracteres de escape) que causaban el **Syntax error "`"**.
+Se añadió la dependencia **prop-types** para evitar el error de Rollup/Vite y se incluyó `src/index.css`.
 
 ```bash
 npm install
-npm run dev   # prueba local
-npm run build # producción
+npm run dev
+npm run build
 ```
