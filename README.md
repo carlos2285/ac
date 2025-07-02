@@ -1,6 +1,9 @@
-# Analítica Consultores – Fix: CommonJS PostCSS/Tailwind config
+# Fix de backticks (Navbar) – listo para Amplify
 
-Soluciona el error **"Failed to load PostCSS config: Unexpected token 'export'"** que se presentó en Amplify.
+Se corrigieron los template literals en `Navbar.jsx` y `Logo.jsx` (se eliminaron los caracteres de escape) que causaban el **Syntax error "`"**.
 
-## Cambios clave
-- `postcss.config.js` y `tailwind.config.js` ahora usan `module.exports = {}` (CommonJS), completamente compatibles con Node 18 en AWS Amplify.
+```bash
+npm install
+npm run dev   # prueba local
+npm run build # producción
+```
