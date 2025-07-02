@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: 'Space Grotesk', sans-serif;
-    scroll-behavior: smooth;
-  }
+.nav-link {
+  @apply relative px-1.5 font-semibold text-slate-700 transition;
+}
+.nav-link::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all;
+  transition: width 200ms ease;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
 }
