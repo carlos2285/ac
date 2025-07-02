@@ -4,9 +4,9 @@ export default function Logo({ variant = "horizontal", size = 4, className = "" 
   const filename = variant === "horizontal" ? "ac-horizontal-blue.png" : "ac-icon-blue.png";
   return (
     <img
-      src={\`/logos/${filename}\`}
+      src={`/logos/${filename}`}
       alt="Logotipo Analítica Consultores"
-      className={\`h-${size} w-auto select-none ${className}\`}
+      className={`h-${size} w-auto select-none ${className}`}
       draggable={false}
     />
   );
